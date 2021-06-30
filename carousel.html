@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novo Carousel</title>
+
+        <style>
+
+          * {
+            margin: 0;
+            padding: 0;
+          }
+
+          .carousel {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 700px;
+            border: solid 1px #363535;
+            overflow: hidden;
+          }
+
+          .quadro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 400px;
+          }
+
+          @keyframes teste {
+            0% {margin-right: -700px;}
+            20% {margin-right: -1400px;}
+            40% {margin-right: -2100px;}
+            60% {margin-right: -2800px;}
+            80% {margin-right: -3500px;}
+            100% {margin-right: -4200px;}
+          }
+
+          #primeiro {
+            animation: teste 14s infinite
+          }
+
+          /* Início - Vertical */
+
+          .carouselV {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 300px;
+            height: 500px;
+            border: solid 1px #363535;
+            overflow: hidden;
+          }
+
+          .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 500px;
+          }
+
+          @keyframes slideV {
+            0% {margin-top: -500px;}
+            20% {margin-top: -1000px;}
+            40% {margin-top: -1500px;}
+            60% {margin-top: -2000px;}
+            80% {margin-top: -2500px;}
+            100% {margin-top: -3000px;}
+          }
+
+          #first {
+            animation: slideV 10s infinite
+          }
+            
+        </style>
+    </head>
+    <body>
+
+      
+      <div class="carousel"> <!-- Horizontal -->
+
+        <div id="primeiro" >
+          <div class="quadro"><h1>1</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #c7c7c7;"><h1>1</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #cf9d2f;"><h1>2</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #157515;"><h1>3</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #a31f1f;"><h1>4</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #174aa8;"><h1>5</h1></div>
+        </div>
+
+        <div>
+          <div class="quadro" style="background: #c7c7c7;"><h1>1</h1></div>
+        </div>
+
+      </div> <!-- Horizontal -->
+
+
+      <div class="carouselV"> <!-- Vertical -->
+
+        <div id="first"> <!-- Referência (Não aparece) -->
+          <div class="slide"></div>
+        </div>
+        
+        <div >
+          <div class="slide" style="background: #c7c7c7;"><h1>1</h1></div>
+        </div>
+
+        <div>
+          <div class="slide" style="background: #cf9d2f;"><h1>2</h1></div>
+        </div>
+
+        <div>
+          <div class="slide" style="background: #157515;"><h1>3</h1></div>
+        </div>
+
+        <div>
+          <div class="slide" style="background: #a31f1f;"><h1>4</h1></div>
+        </div>
+
+        <div>
+          <div class="slide" style="background: #174aa8;"><h1>5</h1></div>
+        </div>
+
+        <div>
+          <div class="slide" style="background: #c7c7c7;"><h1>1</h1></div>
+        </div>
+
+      </div><!-- Vertical -->
+
+      
+    </body>
+</html>
